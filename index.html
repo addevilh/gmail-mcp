@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>gmail-mcp: a personal Gmail connector for Claude Code</title>
+<meta name="description" content="gmail-mcp is a private, single-user tool that connects its owner's Gmail account to the Claude Code AI assistant on the owner's own computer.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <p class="eyebrow">Personal project by addevilh</p>
+  <h1>gmail-mcp</h1>
+  <p class="lead">A private tool that lets its owner work with their own Gmail account from Claude Code, an AI assistant, on their own computer.</p>
+</header>
+
+<main>
+  <section>
+    <h2>What it is</h2>
+    <p>gmail-mcp is a local <a href="https://modelcontextprotocol.io">Model Context Protocol</a> (MCP) server. It runs only on the owner's computer and connects a single Gmail account, the owner's, to Claude Code. It is built on the open-source <a href="https://github.com/gongrzhe/server-gmail-autoauth-mcp">server-gmail-autoauth-mcp</a> package.</p>
+  </section>
+
+  <section>
+    <h2>Who can use it</h2>
+    <p>Only the owner. gmail-mcp is not offered to the public: there is no sign-up, no hosted service, and no other people's accounts are connected.</p>
+  </section>
+
+  <section>
+    <h2>What it does</h2>
+    <ul>
+      <li>Searches and reads messages when the owner asks.</li>
+      <li>Writes drafts, and sends email only on the owner's explicit request.</li>
+      <li>Applies labels and manages Gmail filters.</li>
+      <li>Saves an attachment to the owner's computer when asked to.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Google permissions it requests</h2>
+    <table>
+      <thead>
+        <tr><th>Scope</th><th>Why it is needed</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><code>gmail.modify</code></td><td>Read, search, draft, send and label messages.</td></tr>
+        <tr><td><code>gmail.settings.basic</code></td><td>Create and manage Gmail filters.</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Your data</h2>
+    <p>Sign-in tokens are stored only on the owner's computer. gmail-mcp has no server or database, and it does not sell Gmail data or share it for advertising. The <a href="privacy.html">Privacy Policy</a> describes exactly what is accessed and where it goes.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p><a href="mailto:addevilh@gmail.com">addevilh@gmail.com</a></p>
+  </section>
+</main>
+
+<footer>
+  <nav><a href="index.html">Home</a> · <a href="privacy.html">Privacy Policy</a></nav>
+  <p>An independent personal project, not affiliated with or endorsed by Google or Anthropic. Gmail is a trademark of Google LLC. Claude Code is a product of Anthropic.</p>
+</footer>
+</body>
+</html>
